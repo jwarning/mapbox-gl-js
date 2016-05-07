@@ -59,6 +59,8 @@ Geolocate.prototype = util.inherit(Control, {
             bearing: 0,
             pitch: 0
         });
+
+        this._map.fire('geolocate', position);
         this._finish();
     },
 
